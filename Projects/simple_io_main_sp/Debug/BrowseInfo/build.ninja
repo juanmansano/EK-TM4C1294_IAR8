@@ -1,0 +1,51 @@
+##IAR Ninja build file
+
+
+#Rules
+rule COMPILER_XCL
+  command = C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\XclFileGenerator.exe $xclcommand -f "$rspfile_name"
+  description = IAR_NEW_TOOL+++COMPILER_XCL+++$in+++C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\XclFileGenerator.exe $flags
+  rspfile = $rspfile_name
+  rspfile_content = $flags
+
+rule INDEXER
+  command = C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\SourceIndexer.exe $flags
+  depfile = $out.dep
+  description = IAR_NEW_TOOL+++INDEXER+++$out+++C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\SourceIndexer.exe $flags
+
+rule MAKEBROWSE
+  command = C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\makeBrowseData.exe $flags
+  description = IAR_NEW_TOOL+++MAKEBROWSE+++$out+++C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\makeBrowseData.exe $flags
+
+rule PDBLINK
+  command = C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\PbdLink.exe $flags
+  description = IAR_NEW_TOOL+++PDBLINK+++$out+++C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\PbdLink.exe $flags
+
+
+
+#Build steps
+build E$:\Universidade\2020_2\Sistemas$ Embarcados\Laboratorio1\EK-TM4C1294_IAR8\Projects\simple_io_main_sp\Debug\BrowseInfo\simple_io_main_sp.xcl : COMPILER_XCL 
+  xclcommand = -source_file "E$:\Universidade\2020_2\Sistemas$ Embarcados\Laboratorio1\EK-TM4C1294_IAR8\Projects\simple_io_main_sp\src\simple_io_main_sp.c" -xcl_file "E$:\Universidade\2020_2\Sistemas$ Embarcados\Laboratorio1\EK-TM4C1294_IAR8\Projects\simple_io_main_sp\Debug\BrowseInfo\simple_io_main_sp.xcl" -macro_file "E$:\Universidade\2020_2\Sistemas$ Embarcados\Laboratorio1\EK-TM4C1294_IAR8\Projects\simple_io_main_sp\Debug\BrowseInfo\simple_io_main_sp.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = "E$:\Universidade\2020_2\Sistemas$ Embarcados\Laboratorio1\EK-TM4C1294_IAR8\Projects\simple_io_main_sp\src\simple_io_main_sp.c" -o "E$:\Universidade\2020_2\Sistemas$ Embarcados\Laboratorio1\EK-TM4C1294_IAR8\Projects\simple_io_main_sp\Debug\Obj\\" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -I "E$:\Universidade\2020_2\Sistemas$ Embarcados\Laboratorio1\EK-TM4C1294_IAR8\Projects\simple_io_main_sp\..\..\TivaWare_C_Series-2.1.4.178\\" -Ol -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\Core\Include\\" -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\DSP\Include\\" --predef_macros "E$:\Universidade\2020_2\Sistemas$ Embarcados\Laboratorio1\EK-TM4C1294_IAR8\Projects\simple_io_main_sp\Debug\BrowseInfo\simple_io_main_sp.tmp"
+  rspfile_name = E$:\Universidade\2020_2\Sistemas$ Embarcados\Laboratorio1\EK-TM4C1294_IAR8\Projects\simple_io_main_sp\Debug\BrowseInfo\simple_io_main_sp.xcl.rsp
+
+build E$:\Universidade\2020_2\Sistemas$ Embarcados\Laboratorio1\EK-TM4C1294_IAR8\Projects\simple_io_main_sp\Debug\BrowseInfo\system_TM4C1294_TW.xcl : COMPILER_XCL 
+  xclcommand = -source_file "E$:\Universidade\2020_2\Sistemas$ Embarcados\Laboratorio1\EK-TM4C1294_IAR8\Projects\simple_io_main_sp\src\system_TM4C1294_TW.c" -xcl_file "E$:\Universidade\2020_2\Sistemas$ Embarcados\Laboratorio1\EK-TM4C1294_IAR8\Projects\simple_io_main_sp\Debug\BrowseInfo\system_TM4C1294_TW.xcl" -macro_file "E$:\Universidade\2020_2\Sistemas$ Embarcados\Laboratorio1\EK-TM4C1294_IAR8\Projects\simple_io_main_sp\Debug\BrowseInfo\system_TM4C1294_TW.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = "E$:\Universidade\2020_2\Sistemas$ Embarcados\Laboratorio1\EK-TM4C1294_IAR8\Projects\simple_io_main_sp\src\system_TM4C1294_TW.c" -o "E$:\Universidade\2020_2\Sistemas$ Embarcados\Laboratorio1\EK-TM4C1294_IAR8\Projects\simple_io_main_sp\Debug\Obj\\" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -I "E$:\Universidade\2020_2\Sistemas$ Embarcados\Laboratorio1\EK-TM4C1294_IAR8\Projects\simple_io_main_sp\..\..\TivaWare_C_Series-2.1.4.178\\" -Ol -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\Core\Include\\" -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\CMSIS\DSP\Include\\" --predef_macros "E$:\Universidade\2020_2\Sistemas$ Embarcados\Laboratorio1\EK-TM4C1294_IAR8\Projects\simple_io_main_sp\Debug\BrowseInfo\system_TM4C1294_TW.tmp"
+  rspfile_name = E$:\Universidade\2020_2\Sistemas$ Embarcados\Laboratorio1\EK-TM4C1294_IAR8\Projects\simple_io_main_sp\Debug\BrowseInfo\system_TM4C1294_TW.xcl.rsp
+
+build E$:\Universidade\2020_2\Sistemas$ Embarcados\Laboratorio1\EK-TM4C1294_IAR8\Projects\simple_io_main_sp\Debug\BrowseInfo\simple_io_main_sp.pbi : INDEXER E$:\Universidade\2020_2\Sistemas$ Embarcados\Laboratorio1\EK-TM4C1294_IAR8\Projects\simple_io_main_sp\Debug\BrowseInfo\simple_io_main_sp.xcl |  $
+E$:\Universidade\2020_2\Sistemas$ Embarcados\Laboratorio1\EK-TM4C1294_IAR8\Projects\simple_io_main_sp\src\simple_io_main_sp.c
+  flags = "-out=E$:\Universidade\2020_2\Sistemas$ Embarcados\Laboratorio1\EK-TM4C1294_IAR8\Projects\simple_io_main_sp\Debug\BrowseInfo\simple_io_main_sp.pbi" -f "E$:\Universidade\2020_2\Sistemas$ Embarcados\Laboratorio1\EK-TM4C1294_IAR8\Projects\simple_io_main_sp\Debug\BrowseInfo\simple_io_main_sp.xcl"
+
+build E$:\Universidade\2020_2\Sistemas$ Embarcados\Laboratorio1\EK-TM4C1294_IAR8\Projects\simple_io_main_sp\Debug\BrowseInfo\system_TM4C1294_TW.pbi : INDEXER E$:\Universidade\2020_2\Sistemas$ Embarcados\Laboratorio1\EK-TM4C1294_IAR8\Projects\simple_io_main_sp\Debug\BrowseInfo\system_TM4C1294_TW.xcl |  $
+E$:\Universidade\2020_2\Sistemas$ Embarcados\Laboratorio1\EK-TM4C1294_IAR8\Projects\simple_io_main_sp\src\system_TM4C1294_TW.c
+  flags = "-out=E$:\Universidade\2020_2\Sistemas$ Embarcados\Laboratorio1\EK-TM4C1294_IAR8\Projects\simple_io_main_sp\Debug\BrowseInfo\system_TM4C1294_TW.pbi" -f "E$:\Universidade\2020_2\Sistemas$ Embarcados\Laboratorio1\EK-TM4C1294_IAR8\Projects\simple_io_main_sp\Debug\BrowseInfo\system_TM4C1294_TW.xcl"
+
+build E$:\Universidade\2020_2\Sistemas$ Embarcados\Laboratorio1\EK-TM4C1294_IAR8\Projects\simple_io_main_sp\Debug\BrowseInfo\simple_io_main_sp.pbw : MAKEBROWSE E$:\Universidade\2020_2\Sistemas$ Embarcados\Laboratorio1\EK-TM4C1294_IAR8\Projects\simple_io_main_sp\Debug\BrowseInfo\simple_io_main_sp.pbd
+  flags = "E$:\Universidade\2020_2\Sistemas$ Embarcados\Laboratorio1\EK-TM4C1294_IAR8\Projects\simple_io_main_sp\Debug\BrowseInfo\simple_io_main_sp.pbd" -output "E$:\Universidade\2020_2\Sistemas$ Embarcados\Laboratorio1\EK-TM4C1294_IAR8\Projects\simple_io_main_sp\Debug\BrowseInfo\simple_io_main_sp.pbw"
+
+build E$:\Universidade\2020_2\Sistemas$ Embarcados\Laboratorio1\EK-TM4C1294_IAR8\Projects\simple_io_main_sp\Debug\BrowseInfo\simple_io_main_sp.pbd : PDBLINK E$:\Universidade\2020_2\Sistemas$ Embarcados\Laboratorio1\EK-TM4C1294_IAR8\Projects\simple_io_main_sp\Debug\BrowseInfo\simple_io_main_sp.pbi |  $
+E$:\Universidade\2020_2\Sistemas$ Embarcados\Laboratorio1\EK-TM4C1294_IAR8\Projects\simple_io_main_sp\Debug\BrowseInfo\system_TM4C1294_TW.pbi
+  flags = -M "E$:\Universidade\2020_2\Sistemas$ Embarcados\Laboratorio1\EK-TM4C1294_IAR8\Projects\simple_io_main_sp\Debug\BrowseInfo\simple_io_main_sp.pbd" "E$:\Universidade\2020_2\Sistemas$ Embarcados\Laboratorio1\EK-TM4C1294_IAR8\Projects\simple_io_main_sp\Debug\BrowseInfo\simple_io_main_sp.pbi" "E$:\Universidade\2020_2\Sistemas$ Embarcados\Laboratorio1\EK-TM4C1294_IAR8\Projects\simple_io_main_sp\Debug\BrowseInfo\system_TM4C1294_TW.pbi"
+

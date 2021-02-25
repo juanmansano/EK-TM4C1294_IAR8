@@ -1,0 +1,5 @@
+# ninja log v5
+1	450	6359155666925798	E:/Universidade/2020_2/Sistemas Embarcados/Laboratorio1/EK-TM4C1294_IAR8/Projects/simple_io_main_sp/Debug/Obj/startup_TM4C1294.o	26facc82aa74bbb7
+318	584	6359155668149862	E:/Universidade/2020_2/Sistemas Embarcados/Laboratorio1/EK-TM4C1294_IAR8/Projects/simple_io_main_sp/Debug/Obj/simple_io_main_sp.o	1bc436a1697a1521
+467	1007	6359155672304334	E:/Universidade/2020_2/Sistemas Embarcados/Laboratorio1/EK-TM4C1294_IAR8/Projects/simple_io_main_sp/Debug/Obj/system_TM4C1294_TW.o	f0126cf8bcce016d
+1024	1910	6359155681428520	E:/Universidade/2020_2/Sistemas Embarcados/Laboratorio1/EK-TM4C1294_IAR8/Projects/simple_io_main_sp/Debug/Exe/simple_io_main_sp.out	772bbc0a16346f3f
