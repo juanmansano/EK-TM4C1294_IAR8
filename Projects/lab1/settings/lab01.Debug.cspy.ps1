@@ -23,9 +23,9 @@
 
 if ($debugfile -eq "")
 {
-& "C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "E:\Universidade\2020_2\Sistemas Embarcados\Laboratorio1\EK-TM4C1294_IAR8\Projects\lab1\settings\lab1.Debug.general.xcl" --backend -f "E:\Universidade\2020_2\Sistemas Embarcados\Laboratorio1\EK-TM4C1294_IAR8\Projects\lab1\settings\lab1.Debug.driver.xcl" 
+& "C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "E:\Universidade\2020_2\Sistemas Embarcados\Teste Kraken\EK-TM4C1294_IAR8\Projects\lab01\settings\lab01.Debug.general.xcl" --backend -f "E:\Universidade\2020_2\Sistemas Embarcados\Teste Kraken\EK-TM4C1294_IAR8\Projects\lab01\settings\lab01.Debug.driver.xcl" 
 }
 else
 {
-& "C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "E:\Universidade\2020_2\Sistemas Embarcados\Laboratorio1\EK-TM4C1294_IAR8\Projects\lab1\settings\lab1.Debug.general.xcl" --debug_file=$debugfile --backend -f "E:\Universidade\2020_2\Sistemas Embarcados\Laboratorio1\EK-TM4C1294_IAR8\Projects\lab1\settings\lab1.Debug.driver.xcl" 
+& "C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "E:\Universidade\2020_2\Sistemas Embarcados\Teste Kraken\EK-TM4C1294_IAR8\Projects\lab01\settings\lab01.Debug.general.xcl" --debug_file=$debugfile --backend -f "E:\Universidade\2020_2\Sistemas Embarcados\Teste Kraken\EK-TM4C1294_IAR8\Projects\lab01\settings\lab01.Debug.driver.xcl" 
 }

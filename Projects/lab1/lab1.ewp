@@ -82,7 +82,7 @@
                 </option>
                 <option>
                     <name>GEndianModeBE</name>
-                    <state>1</state>
+                    <state>0</state>
                 </option>
                 <option>
                     <name>OGBufferedTerminalOutput</name>
@@ -99,7 +99,7 @@
                 <option>
                     <name>GBECoreSlave</name>
                     <version>29</version>
-                    <state>39</state>
+                    <state>38</state>
                 </option>
                 <option>
                     <name>OGUseCmsis</name>
@@ -633,7 +633,7 @@
                 </option>
                 <option>
                     <name>OOCOutputFile</name>
-                    <state>lab1.srec</state>
+                    <state></state>
                 </option>
                 <option>
                     <name>OOCCommandLineProducer</name>
@@ -651,7 +651,7 @@
             <data>
                 <extensions></extensions>
                 <cmdline></cmdline>
-                <hasPrio>160</hasPrio>
+                <hasPrio>0</hasPrio>
                 <buildSequence>inputOutputBased</buildSequence>
             </data>
         </settings>
@@ -680,7 +680,7 @@
                 </option>
                 <option>
                     <name>IlinkOutputFile</name>
-                    <state>lab1.out</state>
+                    <state>lab01.out</state>
                 </option>
                 <option>
                     <name>IlinkDebugInfoEnable</name>
@@ -977,7 +977,7 @@
                 </option>
                 <option>
                     <name>IlinkTrustzoneImportLibraryOut</name>
-                    <state>lab1_import_lib.o</state>
+                    <state>lab01_import_lib.o</state>
                 </option>
                 <option>
                     <name>OILinkExtraOption</name>
@@ -2089,7 +2089,7 @@
         <name>$PROJ_DIR$\..\..\TivaWare_C_Series-2.1.4.178\driverlib\ewarm\Exe\driverlib.a</name>
     </file>
     <file>
-        <name>$PROJ_DIR$\src\Laboratorio1.c</name>
+        <name>$PROJ_DIR$\src\lab01.c</name>
     </file>
     <file>
         <name>$PROJ_DIR$\src\startup_TM4C1294.s</name>

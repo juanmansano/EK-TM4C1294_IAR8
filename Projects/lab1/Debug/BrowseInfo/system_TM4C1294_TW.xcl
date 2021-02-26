@@ -1,17 +1,17 @@
-"E:\Universidade\2020_2\Sistemas Embarcados\Laboratorio1\EK-TM4C1294_IAR8\Projects\lab1\src\system_TM4C1294_TW.c"
+"E:\Universidade\2020_2\Sistemas Embarcados\Teste Kraken\EK-TM4C1294_IAR8\Projects\lab01\src\system_TM4C1294_TW.c"
 -std=c11
 -ferror-limit=0
 -fbracket-depth=512
 -funsigned-char
 -MD
 -MF
-E:\Universidade\2020_2\Sistemas Embarcados\Laboratorio1\EK-TM4C1294_IAR8\Projects\lab1\Debug\BrowseInfo\system_TM4C1294_TW.pbi.dep
+E:\Universidade\2020_2\Sistemas Embarcados\Teste Kraken\EK-TM4C1294_IAR8\Projects\lab01\Debug\BrowseInfo\system_TM4C1294_TW.pbi.dep
 -o
-E:\Universidade\2020_2\Sistemas Embarcados\Laboratorio1\EK-TM4C1294_IAR8\Projects\lab1\Debug\BrowseInfo\system_TM4C1294_TW.pbi
+E:\Universidade\2020_2\Sistemas Embarcados\Teste Kraken\EK-TM4C1294_IAR8\Projects\lab01\Debug\BrowseInfo\system_TM4C1294_TW.pbi
 -I
-E:\Universidade\2020_2\Sistemas Embarcados\Laboratorio1\EK-TM4C1294_IAR8\Projects\lab1\src
+E:\Universidade\2020_2\Sistemas Embarcados\Teste Kraken\EK-TM4C1294_IAR8\Projects\lab01\src
 -I
-E:\Universidade\2020_2\Sistemas Embarcados\Laboratorio1\EK-TM4C1294_IAR8\Projects\lab1\..\..\TivaWare_C_Series-2.1.4.178\
+E:\Universidade\2020_2\Sistemas Embarcados\Teste Kraken\EK-TM4C1294_IAR8\Projects\lab01\..\..\TivaWare_C_Series-2.1.4.178\
 -I
 C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\CMSIS\Core\Include\
 -I
@@ -23,7 +23,7 @@ C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\inc
 -I
 C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\inc\c
 -I
-E:\Universidade\2020_2\Sistemas Embarcados\Laboratorio1\EK-TM4C1294_IAR8\TivaWare_C_Series-2.1.4.178
+E:\Universidade\2020_2\Sistemas Embarcados\Teste Kraken\EK-TM4C1294_IAR8\TivaWare_C_Series-2.1.4.178
 -I
 C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\CMSIS\Core\Include
 -I

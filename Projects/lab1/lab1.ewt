@@ -2845,7 +2845,7 @@
         <name>$PROJ_DIR$\..\..\TivaWare_C_Series-2.1.4.178\driverlib\ewarm\Exe\driverlib.a</name>
     </file>
     <file>
-        <name>$PROJ_DIR$\src\Laboratorio1.c</name>
+        <name>$PROJ_DIR$\src\lab01.c</name>
     </file>
     <file>
         <name>$PROJ_DIR$\src\startup_TM4C1294.s</name>
